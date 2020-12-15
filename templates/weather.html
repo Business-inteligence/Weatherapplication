@@ -2,13 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Hello, Flask</title>        
+        <title>Weather Forcast</title>        
     </head>
-    <body>
-        {%if temp %}
-    <span class="message">Hello there, it is {{ temp }} today!</span>.
-{% else %}
-    <span class="message">Test.</span>
-{% endif %}
+    <body>        
+    <span class="message">Hello there, you requested todays weather from {{country}}, 
+        it is {{ temp }} degrees today in {{city}}!</span>.
+
     </body>
 </html>

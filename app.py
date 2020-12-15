@@ -35,7 +35,9 @@ def get_Weather(country):
     temp = weather['tp']  
     return render_template(
         "weather.html",
-        temp=temp,        
+        temp=temp,
+        country = country,
+        city = city,      
     )
 
 def get_state(country):
