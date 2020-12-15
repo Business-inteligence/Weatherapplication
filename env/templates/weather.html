@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Hello, Flask</title>        
+    </head>
+    <body>
+        {%if temp %}
+    <span class="message">Hello there, it is {{ temp }} today!</span>.
+{% else %}
+    <span class="message">Test.</span>
+{% endif %}
+    </body>
+</html>
